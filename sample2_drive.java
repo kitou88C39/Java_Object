@@ -9,16 +9,33 @@ class sample2_drive {
 
         // 車の情報(初期)の確認(monoCarインスタンスのフィールドの確認)
         System.out.println("車の情報(初期)の確認(monoCarインスタンスのフィールドの確認)");
-        System.out.println("車種名:" + mocoCar.carModel);
-        System.out.println("オーナー:" + mocoCar.owner);
-        System.out.println("塗装色:" + mocoCar.color);
-        System.out.println("現在の速度:" + mocoCar.speed);
-        System.out.println("ライト点灯:" + mocoCar.right);
+        System.out.println("<mocoCar>");
+        System.out.println("mocoCar.carModel:" + mocoCar.carModel);
+        System.out.println("mocoCar.owner:" + mocoCar.owner);
+        System.out.println("mocoCar.color:" + mocoCar.color);
+        System.out.println("mocoCar.speed:" + mocoCar.speed);
+        System.out.println("mocoCar.right:" + mocoCar.right);
 
-        // メソッドを呼び出す
-        car.accelerator(); // 速度を上げる
-        car.rightOn(); // ライトを点灯させる
-        car.klaxon(); // クラクションを鳴らす
+        // 車の情報(初期)の確認（chocoCarインスタンスのフィールドの確認(speedのみ)）
+        System.out.println("車の情報(初期)の確認(chocoCarインスタンスのフィールドの確認(speedのみ))");
+
+        System.out.println("<chocoCar>");
+        System.err.println("chocoCar.speed:" + chocoCar.speed);
+
+        // acceleratorメソッドの起動&確認
+        System.out.println("acceleratorメソッドの起動&確認");
+
+        mocoCar.accelerator();
+        System.out.println("<mocoCar>");
+        System.out.println("mocoCar.carModel:" + mocoCar.carModel);
+        System.out.println("mocoCar.owner:" + mocoCar.owner);
+        System.out.println("mocoCar.color:" + mocoCar.color);
+        System.out.println("mocoCar.speed:" + mocoCar.speed);
+        System.out.println("mocoCar.right:" + mocoCar.right);
+
+        System.out.println("<chocoCar>");
+        System.err.println("chocoCar.speed:" + chocoCar.speed);
+
     }
 
 }
