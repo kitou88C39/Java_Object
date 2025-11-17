@@ -26,6 +26,7 @@ class sample2_drive {
         System.out.println("acceleratorメソッドの起動&確認");
 
         mocoCar.accelerator();
+
         System.out.println("<mocoCar>");
         System.out.println("mocoCar.carModel:" + mocoCar.carModel);
         System.out.println("mocoCar.owner:" + mocoCar.owner);
@@ -37,5 +38,4 @@ class sample2_drive {
         System.err.println("chocoCar.speed:" + chocoCar.speed);
 
     }
-
 }
