@@ -17,7 +17,8 @@ public class sample2_car {
         speed = 0; // 現在の速度
         right = false; // ライト点灯(true:点灯/false:消灯)
         System.out.println("-----------------------");
-    
+    }
+
     // コンストラクタ② (引数有)
     sample2_car(String cm, String on, String cl, int sp, boolean rt) {
         System.out.println("コンストラクタ② (引数有)");
@@ -27,17 +28,18 @@ public class sample2_car {
         speed = 0; // 現在の速度
         right = rt; // ライト点灯(true:点灯/false:消灯)
         System.out.println("-----------------------");
+    }
 
-        // メソッド
-        // acceleratarメソッド(現在の速度を1km上げる)
+    // メソッド
+    // acceleratarメソッド(現在の速度を1km上げる)
     void accelerator() {
         speed++;
         System.out.println("(少し速くなった)");
-        // breakeメソッド(現在の速度を1km下げる)
+    }
+
+    // breakeメソッド(現在の速度を1km下げる)
     void brake() {
         speed--;
         System.out.println("(少し遅くなった)");
-
     }
-}}}
 }
