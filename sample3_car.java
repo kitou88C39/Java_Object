@@ -20,7 +20,7 @@ public class sample3_car {
     }
 
     // コンストラクタ② (引数有)
-    sample3_car(String cm, String on, String cl, int sp, boolean rt) {
+    sample3_car(String carModel, String owner, String color, int speed, boolean right) {
         this(); // コンストラクタ① (引数無)の起動
         System.out.println("コンストラクタ② (引数有)");
         this.carModel = carModel;
