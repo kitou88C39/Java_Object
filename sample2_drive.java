@@ -4,8 +4,9 @@ class sample2_drive {
         // 車を場に登場させる(sample_carクラスのインスタンス化)
         System.out.println("車を場に登場させる");
 
-        sample1_car mocoCar = new sample1_car();
-        sample1_car chocoCar = new sample1_car();
+        sample2_car chocoCar = new sample2_car();
+        sample1_car mocoCar = new sample1_car("クーペ", "モコ", "RED", 100, true);
+        sample1_car pochiCar = new sample1_car("トラック", "ポチ", "WHITE", 80, true);
 
         // 車の情報(初期)の確認(monoCarインスタンスのフィールドの確認)
         System.out.println("車の情報(初期)の確認(monoCarインスタンスのフィールドの確認)");
