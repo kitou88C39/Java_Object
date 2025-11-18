@@ -42,4 +42,10 @@ public class sample2_car {
         speed--;
         System.out.println("(少し遅くなった)");
     }
+
+    // rightOffメソッド(ライトを消灯する)
+    void rightOff() {
+        right = false;
+        System.out.println("(ライトを消灯しました)");
+    }
 }
