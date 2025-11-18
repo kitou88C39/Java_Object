@@ -64,6 +64,6 @@ class sample2_drive {
         System.out.println("pochiCar.speed:" + pochiCar.speed);
         System.out.println("pochiCar.right:" + pochiCar.right);
 
+        System.out.println("----------");
     }
-
 }
