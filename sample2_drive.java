@@ -1,15 +1,23 @@
 class sample2_drive {
     public static void main(String[] args) {
 
-        // 車を場に登場させる(sample_carクラスのインスタンス化)
+        // ①車を場に登場させる(sample_carクラスのインスタンス化)
         System.out.println("車を場に登場させる");
 
         sample2_car chocoCar = new sample2_car();
         sample1_car mocoCar = new sample1_car("クーペ", "モコ", "RED", 100, true);
         sample1_car pochiCar = new sample1_car("トラック", "ポチ", "WHITE", 80, true);
 
-        // 車の情報(初期)の確認(monoCarインスタンスのフィールドの確認)
+        // ②車の情報(初期)の確認(monoCarインスタンスのフィールドの確認)
         System.out.println("車の情報(初期)の確認(monoCarインスタンスのフィールドの確認)");
+
+        System.out.println("<chocoCar>");
+        System.out.println("cchocoCar.carModel:" + chocoCar.carModel);
+        System.out.println("chocoCar.owner:" + chocoCar.owner);
+        System.out.println("chocoCar.color:" + chocoCar.color);
+        System.out.println("chocoCar.speed:" + chocoCar.speed);
+        System.out.println("chocoCar.right:" + chocoCar.right);
+
         System.out.println("<mocoCar>");
         System.out.println("mocoCar.carModel:" + mocoCar.carModel);
         System.out.println("mocoCar.owner:" + mocoCar.owner);
@@ -17,7 +25,7 @@ class sample2_drive {
         System.out.println("mocoCar.speed:" + mocoCar.speed);
         System.out.println("mocoCar.right:" + mocoCar.right);
 
-        // 車の情報(初期)の確認（chocoCarインスタンスのフィールドの確認(speedのみ)）
+        // ③車の情報(初期)の確認（chocoCarインスタンスのフィールドの確認(speedのみ)）
         System.out.println("車の情報(初期)の確認(chocoCarインスタンスのフィールドの確認(speedのみ))");
 
         System.out.println("<chocoCar>");
