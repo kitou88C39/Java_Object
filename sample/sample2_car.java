@@ -1,3 +1,5 @@
+package sample;
+
 public class sample2_car {
 
     // フィールド(クラス直下で定義された変数)
