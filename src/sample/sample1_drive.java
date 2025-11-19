@@ -1,4 +1,4 @@
-package sample;
+package src.sample;
 
 class sample1_drive {
     public static void main(String[] args) {

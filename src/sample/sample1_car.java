@@ -1,16 +1,12 @@
-package sample;
+package src.sample;
 
-class sample4_car {
+class sample1_car {
     // フィールド(クラス直下で定義された変数)
     String carModel = "クーペ"; // 車種名
     String owner = "モコ"; // オーナー
     String color = "RED"; // 塗装色
     int speed = 0; // 現在の速度
     Boolean right = false; // ライト点灯(true:点灯/false:消灯)
-
-    // デフォルトコンストラクタ
-    sample4_car() {
-    }
 
     // メソッド(クラス直下で定義された関数)
     // acceleratorメソッド(現在の速度を1km/h上げる)
