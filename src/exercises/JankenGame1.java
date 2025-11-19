@@ -1,6 +1,6 @@
-package exercises;
+package src.exercises;
 
-public class JankenGame {
+public class JankenGame1 {
 
     /**
      * じゃけんの手を表す定数

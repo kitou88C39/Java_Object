@@ -1,4 +1,4 @@
-package sample;
+package src.sample;
 
 public class sample3_car {
 
