@@ -1,4 +1,6 @@
-class sample4_car {
+package sample;
+
+class sample1_car {
     // フィールド(クラス直下で定義された変数)
     String carModel = "クーペ"; // 車種名
     String owner = "モコ"; // オーナー

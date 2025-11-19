@@ -1,3 +1,5 @@
+package sample;
+
 class sample2_drive {
     public static void main(String[] args) {
 
