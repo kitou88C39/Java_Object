@@ -23,13 +23,15 @@ public class sample3_car {
     sample3_car(String carModel, String owner, String color, int speed, boolean right) {
         this(); // コンストラクタ① (引数無)の起動
         System.out.println("コンストラクタ② (引数有)");
-        this.carModel = carModel;
+        this.carModel = carModel; // 車種名
         owner = owner; // オーナー
         color = color; // 塗装色
         speed = speed; // 現在の速度
         right = right; // ライト点灯(true:点灯/false:消灯)
         System.out.println("-----------------------");
     }
+
+    // コンストラクタ② (引数有)
 
     // メソッド
     // acceleratarメソッド(現在の速度を1km上げる)
