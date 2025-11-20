@@ -38,15 +38,31 @@ public class sample_car {
     }
 
     // breakeメソッド(現在の速度を1km下げる) ※0km/h以上にならないように制御
-    void brake() {
-        if (this.speed < 0) {
+    public void brake() {
+        if (this.speed > 0) {
             this.speed--;
         }
     }
 
+    // rightOnメソッド(ライトを点灯する)
+    public void rightOn() {
+        this.right = true;
+    }
+
     // rightOffメソッド(ライトを消灯する)
-    void rightOff() {
-        right = false;
-        System.out.println("(ライトを消灯しました)");
+    public void rightOff() {
+        this.right = false;
+    }
+
+    // klaxonメソッド(クラクションを鳴らす)
+    public void klaxon() {
+        System.out.println(this.owner + "の車:クラクションを鳴らす");
+    }
+
+    // paintメソッド（色を塗る）※セットできる塗装色は『白』『黒』『赤』
+    public void paint(String cl) {
+        if (checkColor(cl)) {
+            this.color = cl;
+        }
     }
 }
