@@ -3,48 +3,41 @@ package src.capsule;
 public class sample_drive {
     public static void main(String[] args) {
 
-        // 車を場に登場させる(sample_carクラスのインスタンス化)
+        // ①車を場に登場させる(sample_carクラスのインスタンス化)
 
         sample_car chocoCar = new sample_car();
-        sample_car mocoCar = new sample_car();
-        sample_car pchiCar = new sample_car();
+        sample_car mocoCar = new sample_car("クーペ", "モコ", "赤", 100, true);
+        sample_car pochiCar = new sample_car("トラック", "ポチ", "白", 80, true);
 
-        // 各インスタンスのフィールドの状態を確認(インスタンス化直後)
+        // ②各インスタンスのフィールドの状態を確認(インスタンス化直後)
         System.out.println("各インスタンスのフィールドの状態を確認(インスタンス化直後)");
 
-        System.out.println("<mocoCar>");
-        System.out.println("mocoCar.carModel:" + mocoCar.carModel);
-        System.out.println("mocoCar.owner:" + mocoCar.owner);
-        System.out.println("mocoCar.color:" + mocoCar.color);
-        System.out.println("mocoCar.speed:" + mocoCar.speed);
-        System.out.println("mocoCar.right:" + mocoCar.right);
-        System.out.println("<mocoCar>");
-        System.out.println("mocoCar.carModel:" + mocoCar.carModel);
-        System.out.println("mocoCar.owner:" + mocoCar.owner);
-        System.out.println("mocoCar.color:" + mocoCar.color);
-        System.out.println("mocoCar.speed:" + mocoCar.speed);
-        System.out.println("mocoCar.right:" + mocoCar.right);
-
-        // 車の情報(初期)の確認（chocoCarインスタンスのフィールドの確認(speedのみ)）
-        System.out.println("車の情報(初期)の確認(chocoCarインスタンスのフィールドの確認(speedのみ))");
-
         System.out.println("<chocoCar>");
-        System.err.println("chocoCar.speed:" + chocoCar.speed);
+        System.out.println("chocoCar.getCarModel:" + chocoCar.getCarModel);
+        System.out.println("chocoCar.getOwner:" + chocoCar.getOwner);
+        System.out.println("chocoCar.getColor:" + chocoCar.getColor);
+        System.out.println("chocoCar.getSpeed:" + chocoCar.getSpeed);
+        System.out.println("chocoCar.getRight:" + chocoCar.getRight);
+        System.out.println("<mocoCar>");
+        System.out.println("mocoCar.getCarModel:" + mocoCar.getCarModel);
+        System.out.println("mocoCar.getOwner:" + mocoCar.getOwner);
+        System.out.println("mocoCar.getColor:" + mocoCar.getColor);
+        System.out.println("mocoCar.getSpeed:" + mocoCar.getSpeed);
+        System.out.println("mocoCar.getRight::" + mocoCar.getRight);
+        System.out.println("<pochiCar>");
+        System.out.println("pochiCar.getCarModel:" + pochiCar.getCarModel);
+        System.out.println("pochiCar.getOwner:" + pochiCar.getOwner);
+        System.out.println("pochiCar.getColor:" + pochiCar.getColor);
+        System.out.println("pochiCar.getSpeed:" + pochiCar.getSpeed);
+        System.out.println("pochiCar.getRight:" + pochiCar.getRight);
+
+        // ③各インスタンスのメソッドを実行
+        chocoCar.paint("黒"); // chocoCar.paintメソッド起動(設定成功)
+        mocoCar.paint("金"); // mocoCar.paintメソッド起動(設定失敗)
+        pochiCar.rightOn(); // pochiCar.rightOnメソッド起動(trueで設定)
 
         // acceleratorメソッドの起動&確認
         System.out.println("acceleratorメソッドの起動&確認");
-
-        mocoCar.accelerator();
-
-        System.out.println("<mocoCar>");
-        System.out.println("mocoCar.carModel:" + mocoCar.carModel);
-        System.out.println("mocoCar.owner:" + mocoCar.owner);
-        System.out.println("mocoCar.color:" + mocoCar.color);
-        System.out.println("mocoCar.speed:" + mocoCar.speed);
-        System.out.println("mocoCar.right:" + mocoCar.right);
-
-        System.out.println("<chocoCar>");
-        System.err.println("chocoCar.speed:" + chocoCar.speed);
 
     }
 
