@@ -76,5 +76,38 @@ public class sample_car {
         }
         return checkResult;
     }
+
     // getter / setter
+    // carModelの getter / setter
+    public String getCarModel() {
+        return this.carModel;
+    }
+
+    public void setCarModel(String carModel) {
+        this.carModel = carModel;
+    }
+
+    // ownerの getter / setter
+    public String getOwner() {
+        return this.owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
+    // colorの getter / setter
+    public String getColor() {
+        return this.color;
+    }
+
+    // speedの getter / setter
+    public String getSpeed() {
+        return this.speed;
+    }
+
+    // rightの getter / setter
+    public String getRight() {
+        return this.right;
+    }
 }
