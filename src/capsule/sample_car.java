@@ -3,33 +3,30 @@ package src.capsule;
 public class sample_car {
     
         // フィールド(クラス直下で定義された変数)
-        String carModel; // 車種名
-        String owner; // オーナー
-        String color; // 塗装色
-        int speed; // 現在の速度
-        boolean right; // ライト点灯(true:点灯/false:消灯)
+        private String carModel; // 車種名
+        private String owner; // オーナー
+        private String color; // 塗装色
+        private int speed; // 現在の速度
+        private boolean right; // ライト点灯(true:点灯/false:消灯)
     
         // コンストラクタ
         // コンストラクタ① (引数無)
-        sample_car() {
-            System.out.println("コンストラクタ① (引数無)");
-            carModel = "未登録"; // 車種名
-            owner = "未登録"; // オーナー
-            color = "未登録"; // 塗装色
-            speed = 0; // 現在の速度
-            right = false; // ライト点灯(true:点灯/false:消灯)
-            System.out.println("-----------------------");
+        public sample_car() {
+            this.carModel = "未登録"; // 車種名
+            this.owner = "未登録"; // オーナー
+            this.color = "未登録"; // 塗装色
+            this.speed = 0; // 現在の速度
+            this.right = false; // ライト点灯(true:点灯/false:消灯)
         }
     
         // コンストラクタ② (引数有)
-        sample_car(String cm, String on, String cl, int sp, boolean rt) {
-            System.out.println("コンストラクタ② (引数有)");
-            carModel = cm; // 車種名
-            owner = on; // オーナー
-            color = cl; // 塗装色
-            speed = 0; // 現在の速度
-            right = rt; // ライト点灯(true:点灯/false:消灯)
-            System.out.println("-----------------------");
+        public sample_car(String cm, String on, String cl, int sp, boolean rt) {
+            this(); // コンストラクタ① (引数無)の起動
+            this.carModel = cm; // 車種名
+            this.owner = on; // オーナー
+            this.color = cl; // 塗装色
+            this.speed = 0; // 現在の速度
+            this.right = rt; // ライト点灯(true:点灯/false:消灯)
         }
     
         // メソッド
