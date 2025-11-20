@@ -65,4 +65,16 @@ public class sample_car {
             this.color = cl;
         }
     }
+
+    // 塗装色が正式なカラーバリエーション(『白』『黒』『赤』)かをチェックする
+    private boolean checkColor(String cl) {
+        boolean checkResult = false; // チェック結果(初期化:false)
+
+        // 正式なカラーバリエーション(『白』『黒』『赤』)と一致していればcheckResultにtrueを設定
+        if (cl.equals("白") || cl.equals("黒") || cl.equals("赤")) {
+            checkResult = true;
+        }
+        return checkResult;
+    }
+    // getter / setter
 }
