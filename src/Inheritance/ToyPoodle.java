@@ -20,8 +20,8 @@ public class ToyPoodle extends Dog {
 
     public ToyPoodle(String n, String s, String v) {
         super(v);
-        this.name = "未設定(name)";
-        this.skill = "未設定(skill)";
+        this.name = n;
+        this.skill = s;
     }
 
     // メソッド
