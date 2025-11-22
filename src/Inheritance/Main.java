@@ -14,7 +14,7 @@ class Main {
         System.out.println("toyPoo2インスタンスの確認");
         System.out.println(toyPoo2.name);
         toyPoo2.bark();
-        toyPood2.doSkill();
+        toyPoo2.doSkill();
     }
 
 }
