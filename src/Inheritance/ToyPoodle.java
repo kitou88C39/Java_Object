@@ -25,7 +25,7 @@ public class ToyPoodle extends Dog {
     }
 
     // メソッド
-    void doskill() {
+    void doSkill() {
         System.out.println(skill);
     }
 
