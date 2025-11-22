@@ -13,8 +13,20 @@ public class ToyPoodle extends Dog {
     }
 
     public ToyPoodle(String v) {
+        super(v);
         this.name = "未設定(name)";
         this.skill = "未設定(skill)";
+    }
+
+    public ToyPoodle(String n, String s, String v) {
+        super(v);
+        this.name = "未設定(name)";
+        this.skill = "未設定(skill)";
+    }
+
+    // メソッド
+    void doskill() {
+        System.out.println(skill);
     }
 
 }
