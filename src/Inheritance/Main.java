@@ -15,6 +15,10 @@ class Main {
         System.out.println(toyPoo2.name);
         toyPoo2.bark();
         toyPoo2.doSkill();
-    }
 
+        System.out.println("mocoインスタンスの確認");
+        System.out.println(moco.name);
+        moco.bark();
+        moco.doSkill();
+    }
 }
