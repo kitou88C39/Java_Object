@@ -7,11 +7,16 @@ public class drive {
         car car = new car();
         firetruck firetruck = new firetruck();
 
-        // carクラスのメソッドを実行
+        // ②paintメソッドの起動
         car.paint("白");
-        car.accelerator();
-        car.accelerator();
-        car.brake();
+        firetruck.paint("赤");
+
+        // ③paintメソッドの起動
+        // 時速200km/hまで加速
+        for (int i = 0; i < 200; i++) {
+            car.accelerator();
+            firetruck.accelerator();
+        }
 
         // carクラスのフィールドの値を出力
         System.out.println("carの塗装色:" + car.getColor());
