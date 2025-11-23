@@ -33,4 +33,18 @@ public class car {
             this.speed--;
         }
     }
+
+    // getter setter
+    public String getColor() {
+        return this.color;
+    }
+
+    public int getSpeed() {
+        return this.speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
 }
