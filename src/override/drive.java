@@ -18,17 +18,13 @@ public class drive {
             firetruck.accelerator();
         }
 
-        // carクラスのフィールドの値を出力
-        System.out.println("carの塗装色:" + car.getColor());
-        System.out.println("carの現在の速度:" + car.getSpeed());
+        // ④carクラスとfiretruckクラスのフィールド値の出力
+        System.out.println("carクラスとfiretruckクラスのフィールド値の出力------");
 
-        // firetruckクラスのインスタンスを生成
-        firetruck firetruck = new firetruck();
-
-        // firetruckクラスのメソッドを実行
-        firetruck.paint("赤");
-        firetruck.accelerator();
-        firetruck.accelerator();
+        System.out.println("car.color       �F" + car.getColor());
+        System.out.println("car.speed       �F" + car.getSpeed());
+        System.out.println("firetruck.color �F" + firetruck.getColor());
+        System.out.println("firetruck.speed �F" + firetruck.getSpeed());
 
     }
 }
