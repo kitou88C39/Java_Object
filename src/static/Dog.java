@@ -23,7 +23,7 @@ class Dog {
     }
     
     //getter(dogNumber)
-    public int getDogNumber() {
-        return this.dogNumber;
+    public static int getDogNumber() {
+        return dogNumber;
     }
 }
