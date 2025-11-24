@@ -9,7 +9,21 @@ class Dog {
     public String breed;
     public String name;
     
-    
+    //コンストラクタ
+    public Dog(String breed, String name) {
+        this.dogNumber++;
+        this.breed = breed;
+        this.name = name;
+    }
 
+    //メソッド
+    //getStatusメソッド
+    public String getStatus() {
+        return "犬の全頭数:" + this.dogNumber + "/名前:" + this.name + "/犬種:" + this.breed;
+    }
     
+    //getter(dogNumber)
+    public int getDogNumber() {
+        return this.dogNumber;
+    }
 }
