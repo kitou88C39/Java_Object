@@ -21,10 +21,10 @@ public class drive {
         // ④carクラスとfiretruckクラスのフィールド値の出力
         System.out.println("carクラスとfiretruckクラスのフィールド値の出力------");
 
-        System.out.println("car.color       �F" + car.getColor());
-        System.out.println("car.speed       �F" + car.getSpeed());
-        System.out.println("firetruck.color �F" + firetruck.getColor());
-        System.out.println("firetruck.speed �F" + firetruck.getSpeed());
+        System.out.println("car.color       :" + car.getColor());
+        System.out.println("car.speed       :" + car.getSpeed());
+        System.out.println("firetruck.color :" + firetruck.getColor());
+        System.out.println("firetruck.speed :" + firetruck.getSpeed());
 
     }
 }
