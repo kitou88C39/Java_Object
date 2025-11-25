@@ -1,6 +1,4 @@
-package src.static;
-
-class Dog {
+public class Dog {
     //定数
     public static final SCIENTIFIC_NAME = "Canis familiaris"; //学部名: カニスファミリアーリス
 
