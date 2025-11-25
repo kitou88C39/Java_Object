@@ -5,6 +5,19 @@ public class Main {
         System.out.println("①Dogクラスのstaticメンバにアクセスできることを確認");
         System.out.println(Dog.SCIENTIFIC_NAME);
         System.out.println(Dog.getDogNumber());
+
+        // ②Dogよりインスタンス化&フィールドの確認
+        System.out.println("②Dogよりインスタンス化&フィールドの確認");
+
+        System.out.println("1体目");
+        Dog moco = new Dog("ToyPoodle", "MOCO");
+        System.out.println(moco.getStatus());
+
+        System.out.println("2体目");
+        Dog choco = new Dog("WelshCorgi", "CHOCO");
+        System.out.println(moco.getStatus());
+        System.out.println(choco.getStatus());
+
     }
 
 }
