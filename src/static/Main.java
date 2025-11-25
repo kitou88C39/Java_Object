@@ -24,6 +24,12 @@ public class Main {
         System.out.println(choco.getStatus());
         System.out.println(pochi.getStatus());
 
+        // ③各オブジェクトからstaticメンバへのアクセス確認
+        System.out.println("③各オブジェクトからstaticメンバへのアクセス確認");
+        System.out.println("<クラスオブジェクトからアクセス>");
+        System.out.println(Dog.SCIENTIFIC_NAME);
+        System.out.println(Dog.getDogNumber());
+
     }
 
 }
