@@ -18,6 +18,12 @@ public class Main {
         System.out.println(moco.getStatus());
         System.out.println(choco.getStatus());
 
+        System.out.println("3体目");
+        Dog pochi = new Dog("GoldenRetriever", "POCHI");
+        System.out.println(moco.getStatus());
+        System.out.println(choco.getStatus());
+        System.out.println(pochi.getStatus());
+
     }
 
 }
