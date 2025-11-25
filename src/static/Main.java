@@ -30,6 +30,9 @@ public class Main {
         System.out.println(Dog.SCIENTIFIC_NAME);
         System.out.println(Dog.getDogNumber());
 
-    }
+        System.out.println("<インスタンスオブジェクトからアクセス>");
+        System.out.println(moco.SCIENTIFIC_NAME);
+        System.out.println(moco.getDogNumber());
 
+    }
 }
