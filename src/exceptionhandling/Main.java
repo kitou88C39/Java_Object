@@ -4,28 +4,28 @@ public class Main {
 
     System.out.println("[INFO]処理開始");
 
-    Calc calcInstance = new Calc();
-
-    calcInstance.calc(x, y);
-
-
-    try {
+    try
+    {
         int x = Integer.parseInt(args[0]);
         int y = Integer.parseInt(args[1]);
 
-        System.out.println(x / y);
+        Calc calcInstance = new Calc();
+
+        calcInstance.calc(x, y);
 
     }catch(
     ArrayIndexOutOfBoundsException e)
     {
-        System.out.println("[ゼロ割]" + e + "が発生しました");
+        System.out.println("[ERROR]例外を検知しました");
+        e.printStackTrace();
     }catch(
-    ArithmeticException e)
+    NumberFormatException e)e.printStackTrace();
     {
-        System.out.println("[インデックス範囲外指定]" + e + "が発生しました");
-    }catch(
-    NumberFormatException e)
+        System.out.println("[ERROR]例外を検知しました");
+    }finally
     {
-        System.out.println("[入力値不正(数字でない)]" + e + "が発生しました");
-    }System.out.println("最後まで処理しました");
-}
+
+        System.out.println("finally");
+    }
+
+}System.out.println("[INFO]正常終了");}}
