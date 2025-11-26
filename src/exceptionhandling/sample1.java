@@ -1,6 +1,6 @@
 package src.exceptionhandling;
 
-public class Sample1 {
+public class sample1 {
     public static void main(String[] args) {
     
         int x = Integer.parseInt(args[0]);
