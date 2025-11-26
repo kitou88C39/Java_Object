@@ -26,6 +26,7 @@ public class Truck extends AbstractTruck {
         if (this.speed < 180) {
             this.speed++;
         }
+    }
 
     // brakeメソッド(現在の速度を1km/h下げる)※0km/h以下にはならない制御
     public void brake() {
@@ -33,4 +34,4 @@ public class Truck extends AbstractTruck {
             this.speed--;
         }
     }
-}}
+}
