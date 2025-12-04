@@ -5,11 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * メインコントローラクラス
- * 外部からのHTTPリクエストを処理するエンドポイントを定義します。
- * 
- * @RestController アノテーションにより、DIコンテナに管理されるコンポーネントとなり、
- *                 かつ、メソッドの戻り値がHTTPレスポンスボディとして扱われます。
+ *
+ * @RestController 内部メモリへ格納指示
  */
 @RestController
 public class MainController {
