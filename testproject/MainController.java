@@ -12,16 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
 
     // 依存性注入 (DI)
-    // Springコンテナによって、PartsAインターフェースを実装した
-    // 適切なBean (PartsAImpl) が自動的にこのフィールドに注入されます。
+    // PartsAをメインクラスに注入指示
     @Autowired
     private PartsA partsA;
 
     /**
      * ルートパス (/) へのGETリクエストを処理するメソッド。
-     * 
-     * @GetMapping アノテーションは、このメソッドがHTTP GETリクエストに応答することを定義します。
-     * @return PartsAコンポーネントから取得した文字列
+     *
+     * @GetMapping アノテーションは、このメソッドがHTTP GETリクエストに応答することを定義する
      */
     @GetMapping("/")
     public String mainMethod() {
