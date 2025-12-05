@@ -13,4 +13,14 @@ public class Application {
         }
     }
 
+    @RestController
+    public class RestControllerPattern {
+        @Autowired
+        private BeanClass bean;
+
+        @GetMapping("/RestController")
+        public String mainMethod() {
+            return component.getText;
+        }
+    }
 }
