@@ -4,6 +4,7 @@ import java.beans.BeanProperty;
 public class DatabaseConfig {
 
     @Bean
+    // YMLファイル
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
