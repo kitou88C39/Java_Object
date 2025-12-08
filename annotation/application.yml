@@ -1,0 +1,3 @@
+test-project:
+  value1: value of application.yml
+  value2: Test2
