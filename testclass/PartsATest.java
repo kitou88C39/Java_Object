@@ -1,6 +1,6 @@
 package testclass;
 
-import java.beans.Transient;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PartsATest {
 
