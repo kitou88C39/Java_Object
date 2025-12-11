@@ -1,6 +1,6 @@
 package testclass;
 
-import java.beans.Transient;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 @SpringBootTest
 @AutoConfigureMockMvc
